@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Preprocessor Write a script that runs a C file through the preprocessor and save the result into another file
+=======
 0. Preprocessor
 Write a script that runs a C file through the preprocessor and save the result into another file.
 1. Compiler
@@ -15,3 +18,4 @@ Write a C program that prints the size of various types on the computer it is co
 7. What happens when you type gcc main.c
 Blog
 
+>>>>>>> 32467c7ed7f415a94d5bf0c38e0504695c96fc7c
