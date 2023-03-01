@@ -8,20 +8,33 @@
 char *leet(char *s)
 {
 	int i;
+	char c;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
+		c = s[i];
+		if (c == 'a' || c == 'A')
+		{
 			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
+		}
+		else if (c == 'e' || c == 'E')
+		{
 			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
+		}
+		else if (c == 'o' || c == 'O')
+		{
 			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
+		}
+		else if (c == 't' || c == 'T')
+		{
 			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
+		}
+		else if (c == 'l' || c == 'L')
+		{
 			s[i] = '1';
+		}
+		else
 	}
-
 	return (s);
+	
 }
