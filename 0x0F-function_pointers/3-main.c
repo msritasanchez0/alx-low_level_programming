@@ -1,6 +1,7 @@
 #include "function_pointers.h"
 #include <stdlib.h>
 #include "3-calc.h"
+#include <stdio.h>
 /**
  * main - prints the result of simple operations
  * @argc: the number pf arguments supplied to the program
@@ -8,7 +9,7 @@
  *
  * Return: Always 0
  */
-int main(int__attribute__((__unused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
@@ -32,7 +33,7 @@ int main(int__attribute__((__unused__)) argc, char *argv[])
 	if ((*op == '/' && num2 == 0) ||
 		(*op == '%' && num2 == 0))
 	{
-		printf("Error\n")
+		printf("Error\n");
 			exit(100);
 	}
 
