@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 		close(fd_to);
 		errno = errno_saved;
 		perror("read");
-		exit(98);
+	       	exit(98);
 	}
 
 	ret = close(fd_from);
