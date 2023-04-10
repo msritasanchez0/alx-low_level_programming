@@ -6,7 +6,7 @@
 /**
  * append_text_to_file - appends text at the end of the file
  * @filename: pointer to file to create
- * @text_conent: content file
+ * @text_content: content file
  *
  * Return: 1 (success, -1 (fail)
  */
@@ -29,7 +29,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		close(fd);
 		return (1);
 	}
-	
+
 	len = strlen(text_content);
 	ret = write(fd, text_content, len);
 	if (ret == -1 || ret < len)
